@@ -5,6 +5,7 @@
   "author": "Guillaume Anciaux",
   "license": "GPL",
   "dependencies": {
+    "angular": "^1.7.8",
     "server": "^1.0.18"
   }
 }
