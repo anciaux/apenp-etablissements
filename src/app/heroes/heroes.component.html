@@ -1,9 +1,8 @@
 
-<h2>Choix d'établissement:
+<h2>Choix d'établissement:</h2>
 <select class="heroes">
   <option *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
     {{hero.name}}
   </option>
 </select>
-</h2>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
