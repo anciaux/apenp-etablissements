@@ -22,8 +22,9 @@ export class HeroesComponent implements OnInit {
 	this.selectedHero = hero;
     }
 
-    async getHeroes(): void {
+    async getHeroes(): Promise<void> {
 	this.heroes = await this.heroService.getHeroes();
+	this.selectedHero = this.heroes[0];
     }
     
 }

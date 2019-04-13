@@ -1,6 +1,6 @@
 export class Hero {
     lat: number;
     lng: number;
-    href: string;
+    url: string;
     name: string;
 }
