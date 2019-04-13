@@ -64,6 +64,8 @@ export class MapComponent implements OnInit {
 	    this.markers_per_school[this.hero.name].openPopup();
 	    
 	}
+	this.mymap.fitBounds(this.school_markers.getBounds());
+	
     }
     
     constructor() { }
