@@ -10,6 +10,8 @@ services:
       - 5443:443
     volumes:
       - letsencrypt-etablissements:/etc/letsencrypt
-
+      - nginx-etablissements:/etc/nginx
+      
 volumes:
     letsencrypt-etablissements:
+    nginx-etablissements:
