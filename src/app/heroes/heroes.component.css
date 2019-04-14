@@ -1,13 +1,13 @@
 /* HeroesComponent's private CSS styles */
-.selected {
-  background-color: #CFD8DC !important;
-  color: white;
+.selection{
+    text-align:center;
 }
+
 .heroes {
-  margin: 0 0 2em 0;
+    width: 40%;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  text-align:center;
 }
 .heroes li {
   cursor: pointer;

@@ -1,9 +1,9 @@
-
-<h2>Choix d'établissement:</h2>
+<div class="selection">
 <select class="heroes" [ngModel]="selectedHero">
   <option [ngValue]="hero" *ngFor="let hero of heroes" (click)="onChange(hero)">
     {{hero.name}}
   </option>
 </select>
+</div>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 <app-map (selectHero)="onChange($event)" [hero]="selectedHero" [heroes]="heroes"></app-map>
