@@ -3,8 +3,13 @@ version: '2.3'
 services:
   angular:
     hostname: localhost
-    container_name: angular-container
+    container_name: etablissements-container
     build: .
     ports:
-      - 8880:80
-        
+      - 5080:80
+      - 5443:443
+    volumes:
+      - letsencrypt-etablissements:/etc/letsencrypt
+
+volumes:
+    letsencrypt-etablissements:
