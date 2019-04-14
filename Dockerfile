@@ -16,7 +16,7 @@ RUN npm audit fix
 RUN npm run build
 
 # Stage 2
-FROM nginx:1.13.12-alpine
+FROM nginx:stable
 
 COPY --from=node /usr/src/app/dist/angular-tour-of-heroes /usr/share/nginx/html
 
