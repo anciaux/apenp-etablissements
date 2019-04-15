@@ -3,4 +3,6 @@ export class Hero {
     lng: number;
     url: string;
     name: string;
+    tel: string;
+    address: string;
 }

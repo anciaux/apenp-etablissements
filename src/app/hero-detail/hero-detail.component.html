@@ -8,10 +8,16 @@
     <input [(ngModel)]="hero.name" placeholder="name"/>
   </label>
 </div>
---->
-<div>
-  <label><span>Site Internet:  </span> <a href={{hero.url}}>{{hero.url}}</a>
-    </label>
+ --->
+ <h3>Informations générales</h3>
+ <div>
+  <label><span>www:  </span> <a href={{hero.url}}>{{hero.url}}</a></label><br>
+  <label><span>Adresse:  </span> {{hero.address}}</label><br>
+  <label><span>Téléphone:  </span> {{hero.tel}}</label>  
+</div>
+ <h3>Repas par la compagnie Eldora</h3>
+ <div>
+  <a href="http://college-nyon.eldora.ch/fr/accueil.html">http://college-nyon.eldora.ch/fr/accueil.html</a>
 </div>
 </div>
 
