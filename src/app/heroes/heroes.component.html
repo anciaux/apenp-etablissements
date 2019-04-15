@@ -1,9 +1,10 @@
 <div class="selection">
-<select class="heroes" [ngModel]="selectedHero">
-  <option [ngValue]="hero" *ngFor="let hero of heroes" (click)="onChange(hero)">
+<select class="heroes" [(ngModel)]="selectedHero">
+  <option *ngFor="let hero of heroes" [ngValue]="hero">
     {{hero.name}}
   </option>
 </select>
+
 </div>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 <app-map (selectHero)="onChange($event)" [hero]="selectedHero" [heroes]="heroes"></app-map>

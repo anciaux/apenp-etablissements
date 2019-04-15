@@ -20,6 +20,7 @@ export class HeroesComponent implements OnInit {
     }
 
     onChange(hero: Hero): void {
+	console.log("BBBB", hero);
 	this.selectedHero = hero;
     }
 
