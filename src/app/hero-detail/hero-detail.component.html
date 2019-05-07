@@ -11,13 +11,11 @@
  --->
  <h3>Informations générales</h3>
  <div>
-  <label><span>www:  </span> <a href={{hero.url}} target="_blank">{{hero.url}} </a></label><br>
-  <label><span>Adresse:  </span> {{hero.address}}</label><br>
-  <label><span>Téléphone:  </span> <a href="tel:{{hero.tel}}" target="_blank">{{hero.tel}} </a></label>  
-</div>
- <h3>Repas par la compagnie Eldora</h3>
- <div>
-  <a href="http://college-nyon.eldora.ch/fr/accueil.html"  target="_blank">http://college-nyon.eldora.ch/fr/accueil.html</a>
-</div>
+   <div *ngIf="hero.url">  <label><span>www:  </span> <a href={{hero.url}} target="_blank">{{hero.url}} </a></label><br></div>
+   <label><span>Adresse:  </span> {{hero.address}}</label><br>
+   <label><span>Téléphone:  </span> <a href="tel:{{hero.tel}}" target="_blank">{{hero.tel}} </a></label>  <br>
+   <div *ngIf="hero.email"> <label><span>email: </span> <a href="{{hero.email}}">{{hero.email}}</a></label></div>  
+   <div *ngIf="hero.menu"> <label><span>Menu Repas: </span> <a href="{{hero.menu}}"  target="_blank">{{hero.menu}}</a></label></div>
+ </div>
 </div>
 

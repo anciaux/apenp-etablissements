@@ -5,4 +5,6 @@ export class Hero {
     name: string;
     tel: string;
     address: string;
+    menu: string;
+    email: string;
 }
