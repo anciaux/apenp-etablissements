@@ -1,3 +1,7 @@
+<div>
+<h2 *ngIf="!selectedHero" class="selection"> Veuillez selectionner l'établissement recherché</h2>
+</div>
+
 <div class="selection">
 <select class="heroes" [(ngModel)]="selectedHero">
   <option *ngFor="let hero of heroes" [ngValue]="hero">
@@ -6,5 +10,6 @@
 </select>
 
 </div>
+
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 <app-map (selectHero)="onChange($event)" [hero]="selectedHero" [heroes]="heroes"></app-map>

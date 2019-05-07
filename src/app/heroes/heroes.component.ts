@@ -20,13 +20,12 @@ export class HeroesComponent implements OnInit {
     }
 
     onChange(hero: Hero): void {
-	console.log("BBBB", hero);
 	this.selectedHero = hero;
     }
 
     async getHeroes(): Promise<void> {
 	this.heroes = await this.heroService.getHeroes();
-	this.selectedHero = this.heroes[0];
+	this.selectedHero = null;
     }
     
 }
