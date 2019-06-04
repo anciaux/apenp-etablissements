@@ -23,7 +23,7 @@ export const HEROES: Hero[] = [
        tel: "021 338 05 25", address: "Chemin en Purian 6, Prangins", menu: null, email: null},
     
     {  lat: 46.394501, lng: 6.247246, url: "https://www.epnyonjuraprangins.ch/batiment/prangins-la-combe/", name: "Ecole de la Roche-Combe",
-       tel: "021 338 05 25" ,address: "Rue de la Gare 13, Prangins", menu: "https://prangins.ch/uploads/menu%20école%2029.pdf", email: null},
+       tel: "021 338 05 25" ,address: "Rue de la Gare 13, Prangins", menu: "https://prangins.ch/vivre-a-prangins/enfance-ecole-formation/cantine-scolaire/", email: null},
     
     {  lat: 46.392985, lng: 6.233821, url: "https://www.epnyonjuraprangins.ch/batiment/nyon-site-de-gai-logis/", name: "Ecole de Gai-Logis",
        tel: "021 338 05 25", address: "Chemin des Plantaz 15, Nyon", menu: null, email: null},
